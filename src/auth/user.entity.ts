@@ -11,9 +11,6 @@ export class User extends BaseEntity {
   @Column({ nullable: true })
   lastname: string;
 
-  @Column({ nullable: true })
-  role: string;
-
   @Column('varchar', { length: 11, nullable: true })
   phoneNumber: string;
 
