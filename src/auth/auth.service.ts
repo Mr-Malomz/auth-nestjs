@@ -4,10 +4,8 @@ import { InjectRepository } from '@nestjs/typeorm';
 
 @Injectable()
 export class AuthService {
-    constructor(
-        @InjectRepository(UserRepository)
-        private userRepository: UserRepository,
-    ){
-
-    }
+  constructor(
+    @InjectRepository(UserRepository)
+    private userRepository: UserRepository,
+  ) {}
 }
